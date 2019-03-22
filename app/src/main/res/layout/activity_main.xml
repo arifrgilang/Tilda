@@ -6,6 +6,7 @@
         android:layout_height="match_parent"
         tools:context=".main.MainActivity"
         android:orientation="vertical"
+        android:scrollbars="none"
 >
     <RelativeLayout
             android:layout_width="match_parent"
@@ -24,16 +25,88 @@
                 android:layout_marginEnd="16dp"
         />
 
-        <ImageView
-                android:id="@+id/englishbanner"
+        <TextView
+                android:id="@+id/categ_self"
                 android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:src="@drawable/challenge"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/self_improve"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_below="@id/img_1"
-                android:scaleType="fitXY"
+        />
+
+        <TextView
+                android:id="@+id/desc_self"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginStart="16dp"
+                android:text="@string/kembangkan_kemampuanmu_disini"
+                android:layout_below="@id/categ_self"
+        />
+
+        <HorizontalScrollView
+                android:id="@+id/improvement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_self"
+                android:scrollbars="none"
+        >
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:id="@+id/englishbanner"
+                        android:layout_width="340dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/challenge"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:scaleType="fitXY"
+                />
+
+                <ImageView
+                        android:id="@+id/englishbanner2"
+                        android:layout_width="340dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/challenge"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:scaleType="fitXY"
+                />
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+
+        <TextView
+                android:id="@+id/categ_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/lowongan_kerja"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/improvement"
+        />
+
+        <TextView
+                android:id="@+id/desc_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginStart="16dp"
+                android:text="@string/cari_lowongan_berdasarkan_kategori"
+                android:layout_below="@id/categ_job"
+                android:layout_marginBottom="16dp"
         />
 
         <ImageView
@@ -43,7 +116,7 @@
                 android:src="@drawable/menus"
                 android:layout_margin="16dp"
                 android:scaleType="fitXY"
-                android:layout_below="@id/englishbanner"
+                android:layout_below="@id/categ_job"
         />
     </RelativeLayout>
 

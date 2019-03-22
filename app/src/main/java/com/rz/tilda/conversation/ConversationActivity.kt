@@ -2,6 +2,7 @@ package com.rz.tilda.conversation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.rz.tilda.R
 
 class ConversationActivity : AppCompatActivity() {
 
