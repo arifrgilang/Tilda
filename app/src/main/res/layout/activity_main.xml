@@ -72,19 +72,17 @@
                 />
 
                 <ImageView
-                        android:id="@+id/englishbanner2"
+                        android:id="@+id/resultbanner"
                         android:layout_width="340dp"
                         android:layout_height="110dp"
-                        android:src="@drawable/challenge"
+                        android:src="@drawable/result"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
                         android:scaleType="fitXY"
                 />
             </LinearLayout>
 
-
         </HorizontalScrollView>
-
 
         <TextView
                 android:id="@+id/categ_job"
