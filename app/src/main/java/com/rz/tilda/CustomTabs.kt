@@ -37,7 +37,7 @@ object CustomTabs{
         )
 
         customTabsIntent = CustomTabsIntent.Builder(mCustomTabsSession)
-            .setToolbarColor(ContextCompat.getColor(activity, R.color.material_blue_grey_800))
+            .setToolbarColor(ContextCompat.getColor(activity, R.color.colorPrimaryDark))
             .enableUrlBarHiding()
             .build()
         customTabsIntent.intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

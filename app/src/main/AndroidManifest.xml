@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.rz.tilda">
+          xmlns:tools="http://schemas.android.com/tools" package="com.rz.tilda">
 
     <application
             android:allowBackup="true"
@@ -8,8 +8,10 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme">
-        <activity android:name=".conversation.TutorialActivity">
+            android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".tutorial.TutorialActivity"
+                  android:theme="@style/AppThemeNoBar">
+
         </activity>
         <activity android:name=".conversation.ConvoActivity">
         </activity>

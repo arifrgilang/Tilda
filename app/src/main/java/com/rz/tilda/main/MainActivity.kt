@@ -1,15 +1,13 @@
 package com.rz.tilda.main
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.rz.tilda.CustomTabs
 import com.rz.tilda.R
 import com.rz.tilda.conversation.ConvoActivity
-import com.rz.tilda.conversation.TutorialActivity
+import com.rz.tilda.tutorial.TutorialActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), MainContract.View {
@@ -26,16 +24,8 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         mPresenter = MainPresenter(this)
 
         englishbanner.setOnClickListener{
-            val isFirstRun = getSharedPreferences("PREF", MODE_PRIVATE)
-                .getBoolean("isFirstRun", true)
-
-            if(isFirstRun) {
-//                startActivity(Intent(this, TutorialActivity::class.java))
-                    CustomTabs.launch(this.applicationContext, getString(R.string.link))
-
-            } else {
-                startActivity(Intent(this, ConvoActivity::class.java))
-            }
+                startActivity(Intent(this, TutorialActivity::class.java))
+//                    CustomTabs.launch(this.applicationContext, getString(R.string.link))
         }
 
         resultbanner.setOnClickListener{

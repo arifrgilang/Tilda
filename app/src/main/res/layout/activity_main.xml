@@ -32,7 +32,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:text="@string/self_improve"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginStart="16dp"
                 android:layout_below="@id/img_1"
         />
@@ -80,6 +80,16 @@
                         android:layout_marginEnd="16dp"
                         android:scaleType="fitXY"
                 />
+
+                <ImageView
+                        android:id="@+id/kamingsunbanner"
+                        android:layout_width="340dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/kamingsun"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:scaleType="fitXY"
+                />
             </LinearLayout>
 
         </HorizontalScrollView>
@@ -91,7 +101,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:text="@string/lowongan_kerja"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginStart="16dp"
                 android:layout_below="@id/improvement"
         />
