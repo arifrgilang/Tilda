@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Tilda</string>
+    <string name="self_improvement">Self Improvement</string>
+    <string name="kembangkan_kemampuanmu_disini">Kembangkan kemampuanmu disini</string>
+    <string name="english_conv">English Challenge</string>
+    <string name="tscdc_unpad">TSCDC UNPAD</string>
 </resources>
